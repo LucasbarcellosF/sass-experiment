@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,OAAO,CAAC;EACN,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,GAAG;CAQrB;;AAXD,AAIE,OAJK,CAIL,GAAG,CAAC;EACF,OAAO,EAAE,WAAW;EACpB,UAAU,EAAE,IAAI;CACjB;;AAPH,AAQE,OARK,CAQL,EAAE,CAAC;EACD,YAAY,EAAE,IAAI;CACnB",
+    "sources": [
+        "style.scss",
+        "_header.scss",
+        "_card.scss",
+        "_first_section.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
