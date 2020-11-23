@@ -3,9 +3,10 @@
   align-items: center;
   height: 40px;
   background-color: black;
-  position: static;
+  position: fixed;
   padding: 6px;
   overflow: hidden;
+  width: 100%;
 }
 
 .navbar nav {
@@ -66,13 +67,13 @@
 
 .first_section h1 {
   font-weight: 700;
-  font-size: 42px;
+  font-size: 60px;
   text-align: center;
-  color: whitesmoke;
+  color: white;
 }
 
 .first_section p {
-  font-size: 18px;
+  font-size: 28px;
   text-align: center;
   font-weight: 400;
   font-style: italic;
@@ -91,29 +92,14 @@
   width: auto;
 }
 
-.second_section .grid_label {
+.second_section h2 {
   display: block;
-  font-size: 42px;
-  color: whitesmoke;
+  font-size: 60px;
+  color: white;
 }
 
 .second_section .card_grid {
   display: inline-flex;
-}
-
-.second_section button {
-  cursor: pointer;
-  margin-top: 100px;
-  display: block;
-  padding: 10px 30px 10px 30px;
-  background-color: black;
-  color: whitesmoke;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.second_section button:hover {
-  background-color: #818285;
 }
 
 .third_section {
@@ -126,21 +112,23 @@
   overflow: hidden;
 }
 
-.third_section .third_section_label {
+.third_section div {
   text-align: center;
 }
 
-.third_section .third_section_label h3 {
+.third_section div h3 {
   font-size: 64px;
 }
 
-.third_section .third_section_label p {
+.third_section div p {
+  margin-top: -48px;
   font-size: 24px;
   font-style: italic;
   font-weight: 300;
 }
 
 .third_section .section_list {
+  margin-top: 20px;
   display: inline-flex;
   justify-content: center;
   align-content: center;
