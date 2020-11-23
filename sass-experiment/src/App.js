@@ -1,4 +1,8 @@
 import React from 'react'
+import Github from './img/Github.svg'
+import Linkedin from './img/Linkedin.svg'
+
+
 import './styles/style.scss'
 
 function App() {
@@ -21,39 +25,29 @@ function App() {
 
       <section class="second_section">
 
-        <div>
-          <h2>These are some of my projects</h2>
+        <h2 class="grid_label">These are some of my projects</h2>
+
+        <div class="card_grid">
+          <Card image="https://github.com/LucasbarcellosF/NLW/raw/master/example/1.png" label="Ecoleta" description="Next Level Week - Ecoleta" />
+          <Card image="https://raw.githubusercontent.com/LucasbarcellosF/alertrack/master/public/aletrack.png" label="Aletrack" description="SPA Challenge - Alertrack" />
         </div>
-
-        <div>
-          <Card image="" label="" description="" />
-          <Card image="" label="" description="" />
-          <Card image="" label="" description="" />
-          <Card image="" label="" description="" />
-          <Card image="" label="" description="" />
-          <Card image="" label="" description="" />
-
-          <button type="button">
-            Show all
-          </button>
-
-        </div>
+        
       </section>
 
-      <section>
-        <div>
-          <h3></h3>
-          <p></p>
+      <section class="third_section">
+
+        <div class="third_section_label">
+          <h3>Let's work together...</h3>
+          <p>How do you take your coffee?</p>
         </div>
-        <div>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+
+        <div class="section_list">
+          <li><img src={Github} alt="github" /><a href="https://github.com/LucasbarcellosF">Github</a></li>
+          <li><img src={Linkedin} alt="linkedin" /><a href="https://www.linkedin.com/in/lucasbarcellosf/">Linkedin</a></li>
         </div>
 
       </section>
+
     </div>
   )
 }
@@ -63,7 +57,9 @@ function Card(props) {
   return (
     <div class="card">
       <img src={image} alt={label} />
-      <p>{description}</p>
+      <div class="card_description">
+        <p>{description}</p>
+      </div>
     </div>
 
 

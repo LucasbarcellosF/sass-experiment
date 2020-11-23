@@ -1,21 +1,78 @@
 @mixin sectionCenter {
+  margin: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1024px;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .first_section {
   @include sectionCenter;
+  background-color: rgb(114, 74, 237);
     h1 {
       font-weight: 700;
-      font-size: 32px;
+      font-size: 60px;
       text-align: center;
+      color: white;
     };
     p {
-      font-size: 20px;
+      font-size: 28px;
       text-align: center;
-      font-weight: 500;
+      font-weight: 400;
       font-style: italic;
-  }
-}
+      color: whitesmoke;
+  };
+};
+
+.second_section {
+  @include sectionCenter;
+  background-color: rgb(44, 43, 43);
+  width: auto;
+
+  .grid_label {
+    display: block;
+    font-size: 60px;
+    color: white;
+  };
+  .card_grid {
+    display: inline-flex;
+  };
+};
+
+.third_section {
+  @include sectionCenter;
+  .third_section_label {
+    text-align: center;
+    h3 {
+      font-size: 64px;
+    };
+    p {
+      margin-top: -48px;
+      font-size: 24px;
+      font-style: italic;
+      font-weight: 300;
+    };
+  };
+  .section_list {
+    margin-top: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    li {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      margin: 0 20px 0 20px;
+      img {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+      };
+      a {
+        text-decoration: none;
+      };
+    };
+  };
+};
